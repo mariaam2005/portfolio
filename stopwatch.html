@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dual Mode Stopwatch</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="menu-toggle">
+            ☰
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="projects.html">
+                    ← Back to Projects
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <section class="project-details">
+
+        <!-- Hero -->
+
+        <div class="project-hero">
+
+            <img src="images/stopwatch.jpg" alt="Dual Mode Stopwatch">
+
+            <h1>
+                ⏱️ Dual Mode Stopwatch
+            </h1>
+
+            <div class="project-tags">
+
+                <span>ATmega32</span>
+                <span>Timer1</span>
+                <span>Interrupts</span>
+                <span>7447</span>
+
+            </div>
+
+        </div>
+
+        <!-- Overview -->
+
+        <div class="project-section">
+
+            <h2>Overview</h2>
+
+            <p>
+
+                The Dual Mode Stopwatch is an embedded system
+                designed using the ATmega32 microcontroller
+                and multiplexed seven-segment displays.
+
+                The system supports two operating modes:
+                Increment Mode for counting upward and
+                Countdown Mode for counting downward from
+                a user-defined time value.
+
+                Multiple external interrupts and push buttons
+                provide intuitive control over the stopwatch,
+                including reset, pause, resume, and mode
+                switching functionalities.
+
+            </p>
+
+        </div>
+
+        <!-- Objectives -->
+
+        <div class="project-section">
+
+            <h2>Objectives</h2>
+
+            <ul>
+
+                <li>Implement a digital stopwatch using ATmega32.</li>
+
+                <li>Support increment and countdown modes.</li>
+
+                <li>Display time using multiplexed seven-segment displays.</li>
+
+                <li>Use external interrupts for user control.</li>
+
+                <li>Provide accurate timing using Timer1.</li>
+
+                <li>Implement visual and audible alerts.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Features -->
+
+        <div class="project-section">
+
+            <h2>Key Features</h2>
+
+            <ul>
+
+                <li>Increment Stopwatch Mode.</li>
+
+                <li>Countdown Timer Mode.</li>
+
+                <li>Reset Functionality.</li>
+
+                <li>Pause & Resume Control.</li>
+
+                <li>Time Adjustment Buttons.</li>
+
+                <li>Mode Toggle Function.</li>
+
+                <li>Buzzer Alarm at Countdown Completion.</li>
+
+                <li>LED Mode Indicators.</li>
+
+                <li>Multiplexed Seven-Segment Display.</li>
+
+                <li>Interrupt-Based User Interaction.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Hardware -->
+
+        <div class="project-section">
+
+            <h2>Hardware Components</h2>
+
+            <ul>
+
+                <li>ATmega32 Microcontroller.</li>
+
+                <li>Six Seven-Segment Displays.</li>
+
+                <li>7447 BCD to Seven-Segment Decoder.</li>
+
+                <li>10 Push Buttons.</li>
+
+                <li>Buzzer Alarm.</li>
+
+                <li>Red & Yellow LEDs.</li>
+
+                <li>NPN Transistors.</li>
+
+                <li>16 MHz Crystal Oscillator.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Operation Modes -->
+
+        <div class="project-section">
+
+            <h2>Operation Modes</h2>
+
+            <ul>
+
+                <li>
+
+                    <strong>Increment Mode:</strong>
+
+                    Counts upward from zero and displays
+                    hours, minutes, and seconds.
+
+                </li>
+
+                <br>
+
+                <li>
+
+                    <strong>Countdown Mode:</strong>
+
+                    Counts downward from a user-defined
+                    starting value until reaching zero.
+
+                </li>
+
+                <br>
+
+                <li>
+
+                    <strong>Alarm Function:</strong>
+
+                    Activates a buzzer when the countdown
+                    timer reaches zero.
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Technologies -->
+
+        <div class="project-section">
+
+            <h2>Technologies Used</h2>
+
+            <ul>
+
+                <li>ATmega32</li>
+
+                <li>Embedded C</li>
+
+                <li>Timer1 (CTC Mode)</li>
+
+                <li>External Interrupts</li>
+
+                <li>Multiplexing Technique</li>
+
+                <li>7447 Decoder</li>
+
+                <li>Seven-Segment Displays</li>
+
+                <li>Proteus Simulation</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Challenges -->
+
+        <div class="project-section">
+
+            <h2>Challenges & Solutions</h2>
+
+            <ul>
+
+                <li>
+
+                    <strong>Challenge:</strong>
+
+                    Driving six seven-segment displays
+                    simultaneously.
+
+                    <br><br>
+
+                    <strong>Solution:</strong>
+
+                    Implemented multiplexing using
+                    transistor switching and a single
+                    decoder.
+
+                </li>
+
+                <br>
+
+                <li>
+
+                    <strong>Challenge:</strong>
+
+                    Accurate time counting.
+
+                    <br><br>
+
+                    <strong>Solution:</strong>
+
+                    Configured Timer1 in CTC mode
+                    for precise timing intervals.
+
+                </li>
+
+                <br>
+
+                <li>
+
+                    <strong>Challenge:</strong>
+
+                    Responsive user interaction.
+
+                    <br><br>
+
+                    <strong>Solution:</strong>
+
+                    Utilized external interrupts for
+                    reset, pause, and resume operations.
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Results -->
+
+        <div class="project-section">
+
+            <h2>Results</h2>
+
+            <ul>
+
+                <li>Accurate stopwatch timing.</li>
+
+                <li>Reliable countdown operation.</li>
+
+                <li>Smooth multiplexed display performance.</li>
+
+                <li>Stable interrupt-driven control.</li>
+
+                <li>Successful alarm activation.</li>
+
+                <li>Fully functional Proteus implementation.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Future Work -->
+
+        <div class="project-section">
+
+            <h2>Future Improvements</h2>
+
+            <ul>
+
+                <li>LCD-Based User Interface.</li>
+
+                <li>EEPROM Time Storage.</li>
+
+                <li>Wireless Control Features.</li>
+
+                <li>Multiple Timer Profiles.</li>
+
+                <li>Mobile Application Integration.</li>
+
+                <li>Real Hardware Implementation.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Gallery -->
+
+        <div class="project-section">
+
+            <h2>Gallery</h2>
+            <div class="dual-stopwatch-gallery">
+                <div class="gallery-card">
+
+                    <img src="images/stopwatch-proteus.jpg" alt="Dual Mode Stopwatch">
+
+                    <p>
+                        Dual Mode Stopwatch Proteus Design
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>© 2026 Mariam Ahmed. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+
+</html>

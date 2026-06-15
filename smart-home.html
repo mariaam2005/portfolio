@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Home Automation System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="menu-toggle">
+            ☰
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="projects.html">
+                    ← Back to Projects
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <section class="project-details">
+
+        <!-- Hero -->
+
+        <div class="project-hero">
+
+            <img src="images/smart-home.jpg" alt="Smart Home Automation">
+
+            <h1>
+                🏠 Smart Home Automation System
+            </h1>
+
+            <div class="project-tags">
+
+                <span>ATmega32</span>
+                <span>Embedded</span>
+                <span>Automation</span>
+                <span>Sensors</span>
+
+            </div>
+
+        </div>
+
+        <!-- Overview -->
+
+        <div class="project-section">
+
+            <h2>Overview</h2>
+
+            <p>
+
+                The Smart Home Automation System is an embedded
+                solution designed to automate home lighting,
+                temperature control, and fire detection.
+
+                The system uses an LDR sensor to monitor ambient
+                light intensity, an LM35 sensor for temperature
+                measurement, and a flame sensor for safety
+                monitoring. Fan speed is automatically adjusted
+                using PWM motor control, while an LCD provides
+                real-time feedback about the system status.
+
+            </p>
+
+        </div>
+
+        <!-- Objectives -->
+
+        <div class="project-section">
+
+            <h2>Objectives</h2>
+
+            <ul>
+
+                <li>Automate home lighting control.</li>
+
+                <li>Control fan speed based on temperature.</li>
+
+                <li>Monitor environmental conditions in real time.</li>
+
+                <li>Implement fire detection and alarm functionality.</li>
+
+                <li>Provide real-time LCD feedback.</li>
+
+                <li>Improve comfort, safety, and energy efficiency.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Features -->
+
+        <div class="project-section">
+
+            <h2>Key Features</h2>
+
+            <ul>
+
+                <li>Automatic Lighting Control using LDR.</li>
+
+                <li>Temperature-Based Fan Speed Control.</li>
+
+                <li>PWM Motor Control.</li>
+
+                <li>Fire Detection & Alarm System.</li>
+
+                <li>Real-Time LCD Monitoring.</li>
+
+                <li>LED Intensity Indication.</li>
+
+                <li>Embedded Automation Logic.</li>
+
+                <li>Environmental Monitoring.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Architecture -->
+
+        <div class="project-section">
+
+            <h2>System Architecture</h2>
+
+            <ul>
+
+                <li>ATmega32 Microcontroller.</li>
+
+                <li>LM35 Temperature Sensor.</li>
+
+                <li>LDR Light Sensor.</li>
+
+                <li>Flame Sensor.</li>
+
+                <li>16×2 LCD Display.</li>
+
+                <li>DC Fan Motor.</li>
+
+                <li>PWM Driver.</li>
+
+                <li>LED Indicators.</li>
+
+                <li>Buzzer Alarm.</li>
+
+                <li>ADC Module.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Technologies -->
+
+        <div class="project-section">
+
+            <h2>Technologies Used</h2>
+
+            <ul>
+
+                <li>ATmega32</li>
+
+                <li>Embedded C</li>
+
+                <li>ADC Driver</li>
+
+                <li>PWM Driver</li>
+
+                <li>GPIO Driver</li>
+
+                <li>LCD Driver</li>
+
+                <li>LM35 Sensor</li>
+
+                <li>LDR Sensor</li>
+
+                <li>Flame Sensor</li>
+
+                <li>Proteus Simulation</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Automation Logic -->
+
+        <div class="project-section">
+
+            <h2>Automation Logic</h2>
+
+            <ul>
+
+                <li>
+                    Light intensity below 15% activates all LEDs.
+                </li>
+
+                <li>
+                    Light intensity between 16% and 50%
+                    activates the Red and Green LEDs.
+                </li>
+
+                <li>
+                    Light intensity between 51% and 70%
+                    activates only the Red LED.
+                </li>
+
+                <li>
+                    Light intensity above 70%
+                    turns all LEDs off.
+                </li>
+
+                <li>
+                    Fan speed automatically changes
+                    according to room temperature.
+                </li>
+
+                <li>
+                    Fire detection activates the buzzer
+                    and displays a critical alert on the LCD.
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Challenges -->
+
+        <div class="project-section">
+
+            <h2>Challenges & Solutions</h2>
+
+            <ul>
+
+                <li>
+
+                    <strong>Challenge:</strong>
+                    Controlling multiple home subsystems simultaneously.
+
+                    <br><br>
+
+                    <strong>Solution:</strong>
+                    Integrated lighting, temperature control,
+                    and fire detection into one embedded platform.
+
+                </li>
+
+                <br>
+
+                <li>
+
+                    <strong>Challenge:</strong>
+                    Smooth fan speed regulation.
+
+                    <br><br>
+
+                    <strong>Solution:</strong>
+                    Implemented PWM-based motor control
+                    using Timer0.
+
+                </li>
+
+                <br>
+
+                <li>
+
+                    <strong>Challenge:</strong>
+                    Providing immediate safety alerts.
+
+                    <br><br>
+
+                    <strong>Solution:</strong>
+                    Added flame detection with buzzer
+                    notification and LCD warning messages.
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Results -->
+
+        <div class="project-section">
+
+            <h2>Results</h2>
+
+            <ul>
+
+                <li>Successful smart lighting automation.</li>
+
+                <li>Reliable temperature-based fan control.</li>
+
+                <li>Accurate fire detection and alerting.</li>
+
+                <li>Stable real-time LCD monitoring.</li>
+
+                <li>Efficient PWM motor control.</li>
+
+                <li>Fully functional smart home prototype.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Future Work -->
+
+        <div class="project-section">
+
+            <h2>Future Improvements</h2>
+
+            <ul>
+
+                <li>Mobile Application Integration.</li>
+
+                <li>IoT Remote Monitoring.</li>
+
+                <li>Wireless Sensor Network.</li>
+
+                <li>Smart Energy Management.</li>
+
+                <li>Cloud-Based Automation Control.</li>
+
+                <li>Voice Assistant Integration.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Gallery -->
+
+        <div class="project-section">
+
+            <h2>Gallery</h2>
+
+            <div class="smart-home-gallery">
+
+                <div class="gallery-card">
+
+                    <img src="images/smart-home-proteus.jpg" alt="Smart Home Automation System">
+
+                    <p>
+                        Complete Smart Home Automation System Design
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>© 2026 Mariam Ahmed. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vehicle Fault Detection & Logging System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="menu-toggle">
+            ☰
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="projects.html">
+                    ← Back to Projects
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <section class="project-details">
+
+        <!-- Hero -->
+
+        <div class="project-hero">
+
+            <img src="images/fault-detection.jpg" alt="Vehicle Fault Detection System">
+
+            <h1>
+                🚗 Vehicle Fault Detection & Logging System
+            </h1>
+
+            <div class="project-tags">
+
+                <span>ATmega32</span>
+                <span>UART</span>
+                <span>EEPROM</span>
+                <span>Automotive</span>
+                <span>Diagnostics</span>
+
+            </div>
+
+        </div>
+
+        <!-- Overview -->
+
+        <div class="project-section">
+
+            <h2>Overview</h2>
+
+            <p>
+
+                The Vehicle Fault Detection & Logging System (VFDLS)
+                is an automotive embedded system designed to monitor
+                critical vehicle subsystems, detect abnormal operating
+                conditions, log diagnostic trouble codes (DTCs), and
+                provide real-time feedback to the driver.
+
+                The system follows a Dual ECU Architecture consisting
+                of a Human Machine Interface (HMI ECU) and a Control ECU,
+                communicating through UART to achieve reliable monitoring,
+                fault detection, and data logging functionality.
+
+            </p>
+
+        </div>
+
+        <!-- Objectives -->
+
+        <div class="project-section">
+
+            <h2>Objectives</h2>
+
+            <ul>
+
+                <li>Monitor critical vehicle parameters in real time.</li>
+
+                <li>Detect abnormal operating conditions.</li>
+
+                <li>Store diagnostic trouble codes in external EEPROM.</li>
+
+                <li>Implement a Dual ECU communication architecture.</li>
+
+                <li>Provide a user-friendly monitoring interface.</li>
+
+                <li>Improve vehicle safety and reliability.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Features -->
+
+        <div class="project-section">
+
+            <h2>Key Features</h2>
+
+            <ul>
+
+                <li>Dual ECU Architecture.</li>
+
+                <li>UART Communication Between ECUs.</li>
+
+                <li>EEPROM Fault Logging.</li>
+
+                <li>LM35 Temperature Monitoring.</li>
+
+                <li>Ultrasonic Distance Monitoring.</li>
+
+                <li>Real-Time LCD Interface.</li>
+
+                <li>4×4 Keypad Control.</li>
+
+                <li>Diagnostic Trouble Codes (DTCs).</li>
+
+                <li>Vehicle Window State Monitoring.</li>
+
+                <li>Persistent Error Storage.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Architecture -->
+
+        <div class="project-section">
+
+            <h2>System Architecture</h2>
+
+            <ul>
+
+                <li>HMI ECU (ATmega32).</li>
+
+                <li>Control ECU (ATmega32).</li>
+
+                <li>UART Communication Channel.</li>
+
+                <li>LM35 Temperature Sensor.</li>
+
+                <li>Ultrasonic Sensor.</li>
+
+                <li>24C16 External EEPROM.</li>
+
+                <li>LCD Display Interface.</li>
+
+                <li>4×4 Keypad Interface.</li>
+
+                <li>DC Motors for Window Control.</li>
+
+                <li>I2C Communication for EEPROM.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Technologies -->
+
+        <div class="project-section">
+
+            <h2>Technologies Used</h2>
+
+            <ul>
+
+                <li>ATmega32</li>
+
+                <li>Embedded C</li>
+
+                <li>UART</li>
+
+                <li>I2C</li>
+
+                <li>EEPROM 24C16</li>
+
+                <li>LM35 Sensor</li>
+
+                <li>Ultrasonic Sensor</li>
+
+                <li>LCD Display</li>
+
+                <li>Keypad</li>
+
+                <li>Proteus Simulation</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Fault Detection -->
+
+        <div class="project-section">
+
+            <h2>Fault Detection Logic</h2>
+
+            <ul>
+
+                <li>
+
+                    <strong>P001:</strong>
+                    Accident Risk Detected
+
+                    <br><br>
+
+                    Triggered when the measured distance
+                    becomes less than 10 cm.
+
+                </li>
+
+                <br>
+
+                <li>
+
+                    <strong>P002:</strong>
+                    Engine High Temperature
+
+                    <br><br>
+
+                    Triggered when engine temperature
+                    exceeds 90°C.
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Challenges -->
+
+        <div class="project-section">
+
+            <h2>Challenges & Solutions</h2>
+
+            <ul>
+
+                <li>
+
+                    <strong>Challenge:</strong>
+                    Communication between two independent ECUs.
+
+                    <br><br>
+
+                    <strong>Solution:</strong>
+                    Implemented UART-based communication
+                    protocol for command and data exchange.
+
+                </li>
+
+                <br>
+
+                <li>
+
+                    <strong>Challenge:</strong>
+                    Reliable fault storage after power loss.
+
+                    <br><br>
+
+                    <strong>Solution:</strong>
+                    Stored DTCs permanently inside
+                    external EEPROM memory.
+
+                </li>
+
+                <br>
+
+                <li>
+
+                    <strong>Challenge:</strong>
+                    Monitoring multiple subsystems simultaneously.
+
+                    <br><br>
+
+                    <strong>Solution:</strong>
+                    Distributed responsibilities between
+                    HMI ECU and Control ECU.
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Results -->
+
+        <div class="project-section">
+
+            <h2>Results</h2>
+
+            <ul>
+
+                <li>Successful implementation of Dual ECU architecture.</li>
+
+                <li>Reliable UART communication.</li>
+
+                <li>Accurate fault detection and reporting.</li>
+
+                <li>Persistent EEPROM-based fault logging.</li>
+
+                <li>Real-time vehicle monitoring interface.</li>
+
+                <li>Successful simulation and validation in Proteus.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Future Work -->
+
+        <div class="project-section">
+
+            <h2>Future Improvements</h2>
+
+            <ul>
+
+                <li>OBD-II Integration.</li>
+
+                <li>CAN Bus Communication.</li>
+
+                <li>Wireless Diagnostics.</li>
+
+                <li>Mobile Application Monitoring.</li>
+
+                <li>Cloud-Based Data Logging.</li>
+
+                <li>Real Vehicle Deployment.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Gallery -->
+
+        <div class="project-section">
+
+            <h2>Gallery</h2>
+
+            <div class="vehicle-gallery">
+
+                <div class="gallery-card">
+
+                    <img src="images/vehicle-proteus.jpg" alt="Fault Detection System">
+
+                    <p>
+                        Complete Vehicle Fault Detection System Architecture
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>© 2026 Mariam Ahmed. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+
+</html>
