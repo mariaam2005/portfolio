@@ -582,6 +582,69 @@ body {
     margin-bottom: 50px;
 }
 
+.learning-filters {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 40px;
+
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+
+    background: rgba(139, 92, 246, .08);
+
+    color: var(--text-secondary);
+
+    border: 1px solid rgba(167, 139, 250, .25);
+
+    border-radius: 999px;
+
+    padding: 10px 20px;
+
+    font-size: .95rem;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.filter-btn:hover {
+
+    color: var(--primary-light);
+
+    border-color: var(--primary-border);
+
+    background: rgba(139, 92, 246, .12);
+
+    box-shadow:
+        0 0 15px rgba(139, 92, 246, .20);
+}
+
+.filter-btn.active {
+
+    color: var(--primary-light);
+
+    background: rgba(139, 92, 246, .15);
+
+    border-color: var(--primary-border);
+
+    box-shadow:
+        0 0 20px rgba(139, 92, 246, .25);
+}
+
+.learning-card.hidden {
+
+    display: none;
+}
+
 .learning-grid {
 
     display: grid;
@@ -1497,13 +1560,13 @@ body {
 
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
 
     .contact-page h1,
     .learning-page h1,
     .projects-page h1,
     .skills-page h1,
-    .education-page h1{
+    .education-page h1 {
         font-size: 3rem;
     }
 
@@ -1516,7 +1579,7 @@ footer {
 }
 
 footer p {
-    color: rgba(255,255,255,0.45);
+    color: rgba(255, 255, 255, 0.45);
     font-size: 0.75rem;
 }
 
@@ -1524,4 +1587,3 @@ html,
 body {
     overflow-x: hidden;
 }
-
